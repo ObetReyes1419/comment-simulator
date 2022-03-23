@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Interactive comments section</title>
+
+</head>
+<body class="w-100 h-screen bg-slate-200 relative">
+
+  <div class="commets-container grid gird-cols-1 p-4 mx-auto">
+    <article class="comment p-2  bg-zinc-100 shadow-2xl rounded-xl  flex flex-col gap-2">
+      <section class="comment-info w-100 flex flex-row gap-4  items-center ">
+      <img class="avatar" src="./images/avatars/image-amyrobson.png">
+      <h4 class="name">amyrobson</h4>
+      <small class=date>1 moth ago</small>
+    </section>
+    <section class="comment-content">
+      <p>Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
+    </section>
+    <section class="comment-interaction flex flex-row items-center  justify-between ">
+      <div class="votes flex flex-row items-center bg-zinc-300 p-1 border rounded divide-x-2 ">
+        <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill=" #475569"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 13H5v-2h14v2z"/></svg>
+        <span class="px-2 text-slate-600  font-bold">0</span>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill=" #475569"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      </div>
+      <div class="flex gap-2 font-bold text-slate-600"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#475569"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"/></svg> <span>Reply</span>
+      </div>
+    </section>
+    </article>
+    <form class="border rounded absolute bottom-0 w-screen bg-white left-0  mx-auto flex justify-between items-center gap-1">
+      <img src="./images/avatars/image-juliusomo.webp">
+      <textarea  class="form-control block w-full p-4   text-base" placeholder="add a comment"></textarea>
+      
+   
+      <button class="button  
+      self-start w-3/5 h-10 h-100 bg-purple-500 border  rounded-sm shadow-2xl text-gray-200">SEND</button>
+
+    </form>
+  </div>
+ 
+</body>
+</html>
